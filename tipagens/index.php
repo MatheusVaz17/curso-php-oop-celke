@@ -12,7 +12,7 @@
         require './Usuario.php';
 
         $usuario = new Usuario();
-        $msg = $usuario->cadastrar('Matheus Vaz Flores', 'matheus.vaz@grupow.com.br');
+        $msg = $usuario->cadastrar('Matheus Vaz Flores', 'matheusvaz765@gmail.com', 21);
         echo $msg;
 
     ?>

@@ -21,7 +21,7 @@ class Conn{
         $this->port = $_ENV["DB_PORT"];
     }
 
-    public function conectar(){
+    public function connect(){
         
         try{
             $this->connect = new PDO("mysql:host=".$this->host.";port=".$this->port.";dbname=".$this->dbname, $this->user, $this->pass);

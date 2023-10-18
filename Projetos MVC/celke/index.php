@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Utilização Composer</title>
+        <title>Celke</title>
     </head>
+
     <body>
         <?php
+
             require './vendor/autoload.php';
 
             $url = new Core\ConfigController();

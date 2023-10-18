@@ -1,5 +1,5 @@
 {
-    "description": "Celke Projeto PHP OO",
+    "description": "Projeto Celke",
     "authors": [
         {
             "name": "Cesar Szpak",
@@ -8,8 +8,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Sts\\": "sts",
-            "Core\\": "core"
+            "Core\\": "core",
+            "App\\": "app",
+            "Sts\\": "app/sts"
         }
     },
     "require": {}

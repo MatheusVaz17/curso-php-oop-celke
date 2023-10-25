@@ -2,10 +2,18 @@
 
 namespace Sts\Controllers;
 
+if(!defined('C7E3L8K9E5')){
+    header("Location: /");
+}
+
 class Erro{
 
+    private array|string|null $data;
+
     public function index(){
-        echo "Página de Erro";
+        $this->data = [];
+        $loadView = new \Core\ConfigView("sts/Views/erro/erro", $this->data);
+        $loadView->loadView();
     }
 
 }

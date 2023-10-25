@@ -2,10 +2,18 @@
 
 namespace Sts\Controllers;
 
+if(!defined('C7E3L8K9E5')){
+    header("Location: /");
+}
+
 class Contato{
 
+    private array|string|null $data;
+
     public function index(){
-        echo "Página de contato";
+        $this->data = [];
+        $loadView = new \Core\ConfigView("sts/Views/contato/contato", $this->data);
+        $loadView->loadView();
     }
 
 }

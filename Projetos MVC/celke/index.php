@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Celke</title>
-    </head>
+<?php
 
-    <body>
-        <?php
+    define('C7E3L8K9E5', true);
 
-            require './vendor/autoload.php';
+    require './vendor/autoload.php';
 
-            $url = new Core\ConfigController();
-            $url->loadPage();
-        ?>
-    </body>
-</html>
+    $url = new Core\ConfigController();
+    $url->loadPage(); 
